@@ -1,25 +1,56 @@
-body{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
 }
 
-p, h1{
-    color: white;
-    font-family: "Playfair Display", serif;
+.container {
+  max-width: 800px;
+  padding: 20px;
 }
 
-h1{
-    font-size: 3rem;
-    color: red;
+h1 {
+  color: #c00;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px rgba(200, 0, 0, 0.5);
 }
 
-p{
-    font-size: 2rem;
-    text-align: center;
+p {
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
 }
-strong{
-    color: #222222;
+
+strong {
+  color: #c00;
+  font-weight: normal;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+/* Tremor contínuo e mais sutil */
+.tremor {
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(0.3px, -0.3px); }
+  50%  { transform: translate(-0.3px, 0.3px); }
+  75%  { transform: translate(0.3px, 0.3px); }
+  100% { transform: translate(-0.3px, -0.3px); }
+}
+
+@keyframes piscarFundo {
+  /* apagado */
 }
